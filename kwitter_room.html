@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chitter Room😺</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button  id="Filter" class="btn btn-primary" onclick="take2filter()">🐱‍🚀Chitter Filter</button>
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			Chitter😺
+			<sup>
+				
+			</sup>
+		</h1>
+		<span>
+		<h3 class="color_white" id="user_name"></h3>
+		<img id="oh" width="200" height="200" src="cat profillius.jpg" style="border:solid 5px white">
+		<br>
+		<input type="file" id="file" onchange="FileValidation(event)" style="margin-left: 170px;">
+		<br>
+			</span>
+		<div class="form-group input_div_room_page">
+			<label>Add Cat Room:</label>
+<input type="text" id="room_name" class="form-control" placeholder="Cat Room Name..." >
+		</div>
+		<button class="btn btn-success" onclick="addRoom()">Add Cat Room😸</button>
+		<br>
+		<h3 class="something">
+		<a href="https://console.dialogflow.com/api-client/demo/embedded/9f946d1b-921a-44df-85ce-bf33e74f1b77" target="_blank">#Milo's_Chat_Room
+			<br>
+			<div class="somethingnot">Got no one to talk to? Don't worry! Chat with Milo!</div>
+		</a>
+		</h3>
+		
+		<br>
+		<h3 class="color_white">Trending Rooms</h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
